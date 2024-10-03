@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfileShaper</title>
+    <link rel="stylesheet" href="award.css">
+</head>
+
+<body>
+    <header>
+        <h1>ProfileShaper</h1>
+    </header>
+
+    <!-- Main Form Section -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="personal.html" class="icon">👤 Personal Information</a></li>
+                <li><a href="edu.html">🎓 Education</a></li>
+                <li><a href="experience.html">💼 Experience</a></li>
+                <li><a href="contact.html">📇 Contact Information</a></li>
+                <li class="active"><a href="award.html">🏅 Award/Certification</a></li>
+            </ul>
+        </aside>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <div class="form-header">
+                <h2>Award/Certification</h2>
+                <a href="#" class="add-info">Add Info</a>
+            </div>
+            <form class="award-form">
+                <div class="form-group-desc">
+                    <label for="organization">Name of Organization</label>
+                    <input type="text" id="organization" placeholder="Organization's name">
+                </div>
+
+                <div class="form-group-name">
+                    <div class="form-group-left">
+                        <label for="award-title">Award Title (optional)</label>
+                        <input type="text" id="award-title" placeholder="Award Title">
+                    </div>
+                    <div class="form-group-right">
+                        <label for="date">Date of Acquisition</label>
+                        <input type="date" id="date" max="2024-10-02">
+                    </div>
+                </div>
+                <div class="form-group-desc">
+                    <label for="description">Description</label>
+                    <textarea id="description" placeholder="Description"></textarea>
+                </div>
+
+                <div class="form-footer">
+                    <a href="contact.html" class="prev-session">Previous Session</a>
+                    <button type="submit" class="next-session">Finish</button>
+                </div>
+
+            </form>
+        </section>
+    </div>
+
+</body>
+
+</html>

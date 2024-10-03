@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+.resume-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1.name {
+    font-size: 26px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+h2.job-title {
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #777;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #444;
+}
+
+.contacts, .profile, .education, .employment, .skills {
+    font-size: 14px;
+}
+
+.contacts p, .profile p, .education p, .employment p, .skills ul {
+    margin-bottom: 5px;
+}
+
+.job ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.skills .skill-category {
+    display: inline-block;
+    width: 45%;
+    vertical-align: top;
+}
+
+.skills ul {
+    list-style-type: circle;
+    padding-left: 20px;
+}
+
+.skills ul li {
+    margin-bottom: 5px;
+}
+
+@media (max-width: 600px) {
+    .skills .skill-category {
+        width: 100%;
+    }
+}

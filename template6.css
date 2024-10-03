@@ -1,0 +1,62 @@
+body {
+    font-family: 'Verdana', sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 914px;
+    width: 840px;
+}
+
+aside {
+    width: 30%;
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+aside h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+aside p {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.skills {
+    margin-top: 30px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+main {
+    width: 70%;
+    padding: 40px;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+}

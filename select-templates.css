@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: white;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo h2 {
+    margin-left: 20px;
+    font-size: 24px;
+    color: orange;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.template-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.template-section h1 {
+    color: orange;
+    font-size: 32px;
+}
+
+.template-section p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.steps {
+    margin: 20px 0;
+    font-size: 16px;
+}
+
+.steps span {
+    margin-right: 15px;
+}
+
+.template-carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.template-cards {
+    display: flex;
+    justify-content: space-around;
+    width: 80%;
+}
+
+.template-card {
+    background-color: #f9f9f9;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    margin: 10px;
+}
+
+.template-card img {
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.template-card p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: black;
+}
+
+.template-card span {
+    font-size: 14px;
+    color: gray;
+}
+
+button.prev, button.next {
+    background-color: transparent;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+}
+
+.social-links{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* #social_1{
+    height: 2rem;
+} */
+
+.footer .social-links a {
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.terms{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.terms a,.company a{
+    text-decoration: none;
+    color: #fff;
+}
+.terms a:hover,.company a:hover{
+    text-decoration: underline;
+}
+
+.footer .contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.4rem;    
+}
+
+Container for the template
+.template-container {
+    position: relative;
+    display: inline-block;
+    width: 250px;  /* Adjust the width of the template */
+    height: 350px; /* Adjust the height of the template */
+    margin: 20px;
+    overflow: hidden;
+}
+
+/* Template image */
+.template-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Hidden button that appears on hover */
+.use-template-btn {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ff5722;  /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show the button when hovering over the container */
+.template-container:hover .use-template-btn {
+    opacity: 1;
+}
+
+/* Container for the template */
+.template-container {
+    position: relative;
+    display: inline-block;
+    width: 250px;  /* Adjust the width of the template */
+    height: 350px; /* Adjust the height of the template */
+    margin: 20px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Template image */
+.template-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Hidden button that appears on hover */
+.use-template-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ff5722;  /* Button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Hover effect for the container */
+.template-container:hover {
+    transform: translateY(-10px); /* Move upwards */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.2); /* Add more shadow */
+}
+
+/* Show the button when hovering over the container */
+.template-container:hover .use-template-btn {
+    opacity: 1;
+}
+
+/* Scrollable container for templates */
+.template-scroll-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  /* 3 templates per row */
+    gap: 20px;  /* Space between templates */
+    padding: 20px;
+    width: 100%;  /* Full width of the container */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+/* Hide the scrollbar in modern browsers */
+.template-scroll-container::-webkit-scrollbar {
+    display: none;  /* For Chrome, Safari, and Opera */
+}
+.template-scroll-container {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+
+/* Template image */
+.template-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Button styling */
+.use-template-btn {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+
+

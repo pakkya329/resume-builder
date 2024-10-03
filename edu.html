@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProfileShaper - Education Form</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="edu.css">
+</head>
+<body>
+
+    <!-- ProfileShaper Header -->
+    <header>
+        <h1>ProfileShaper</h1>
+    </header>
+
+    <!-- Main Form Section -->
+    <div class="container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <ul>
+                <li><a href="personal.html" class="icon">👤 Personal Information</a></li>
+                <li class="active"><a href="#">🎓 Education</a></li>
+                <li><a href="#">💼 Experience</a></li>
+                <li><a href="#">📇 Contact Information</a></li>
+                <li><a href="#">🏅 Award/Certification</a></li>
+            </ul>
+        </aside>
+
+        <!-- Form Section -->
+        <section class="form-section">
+            <div class="form-header">
+                <h2>Education</h2>
+                <a href="#" class="add-info">Add Info</a>
+            </div>
+
+            <!-- Education Form -->
+            <form>
+                <div class="form-group">
+                    <label for="institution">Institution Name</label>
+                    <input type="text" id="institution" placeholder="Name of Institute">
+                </div>
+                <div class="form-group">
+                    <label for="course">Course</label>
+                    <input type="text" id="course" placeholder="Course studied">
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" placeholder="Country name">
+                </div>
+                <div class="form-group">
+                    <label for="state">State</label>
+                    <input type="text" id="state" placeholder="State">
+                </div>
+                <div class="form-group" >
+                    <label for="start">Time Period</label>
+                    <input type="date" id="start" class="time-input" placeholder="dd-mm-yyyy"><span>_</span>
+                    <input type="date" id="finish"  class="time-input" placeholder="dd-mm-yyyy">
+                    <!-- <input type="checkbox" id="current" name="current">
+                    <label for="current">Currently study here</label> -->
+                </div>
+                <div class="form-footer">
+                    <a href="personal.html" class="prev-session">Previous Session</a>
+                    <a href="#" class="next-session">Next session</a>
+                </div>
+            </form>
+        </section>
+    </div>
+
+</body>
+</html>
